@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+\usepackage[letterpaper, margin = 2.5cm]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{hyperref, url}
+
+\usepackage{minted}
+
+\bibliography{refs.bib}
+
+\usepackage{parskip}
+
+\begin{document}
+
+\title{Домашнее задание 1}
+\date{}
+\author{SMR-2026 Starkit Education, Илья Осокин @elijahmipt} %поменяйте на своё
+\maketitle
+
+\section*{Задача 1}
+
+Покажите, что квадратная матрица $A$ коммутирует с $e^A$.
+
+\section*{Задача 2}
+
+\noindent Рассмотрим модель пружинного маятника на горизонтальной плоскости.
+
+Его вектор состояния имеет вид
+
+$x = \begin{pmatrix}
+p \\
+\dot{p} 
+\end{pmatrix}$
+
+Уравнение динамики системы в непрерывном случае таково:
+
+$\dot{x} =  \begin{pmatrix}
+0 & 1 \\
+- \frac{k}{m} & 0 
+\end{pmatrix} x$
+
+Пусть симуляция этой системы производится как
+
+$x_{k+1} = x_k + \Delta t \dot{x}_k$
+
+Найдите, как изменяется полная энергия системы за один шаг симуляции.
+
+
+\end{document}
